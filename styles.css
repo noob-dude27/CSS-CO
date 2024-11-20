@@ -29,18 +29,18 @@ html, body {
 
 .nav-links-template-1 {
     display: flex;
-    gap: 20px; /* Add space between links */
+    gap: 5px; /* Add space between links */
 }
 
 .nav-links-template-1 > a{
     font-family: 'Poppins';
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     text-decoration: none; /* Remove underline */
-    padding-top:20px;
+    padding-top:30px;
     padding-left:10px;
-    padding-right:10px;
+    padding-right:20px;
 }
 
 .homepage-section-2-container {
@@ -49,7 +49,7 @@ html, body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 85vh;
     color: white;
     display: flex;
     flex-direction: column; /* Stack content vertically */
@@ -107,7 +107,7 @@ html, body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 85vh;
     color: #fb8c24;
     display: flex;
     flex-direction: row;
@@ -144,12 +144,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     background-color: black;
 }
 
 .logo {
-    height: 75px;
+    height:100px;
     width: auto;
 }
 
@@ -226,6 +226,7 @@ html, body {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
 .product-item img {
@@ -257,4 +258,81 @@ html, body {
     .product-item {
         width: 100%; /* 1 item per row on small screens */
     }
+}
+
+.purchase-section-1-container{
+    background-color: #fb8c24;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 85vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.purchase-section-1-container > h1{
+    font-family: "Horizon";
+    font-size:30px;
+}
+
+.purchase-section-1-content-group {
+    display: flex;
+    justify-content: center; /* Spread the text and image */
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Optional: limit group width */
+    flex-direction: column;
+}
+
+.purchase-section-1-content-group > img {
+    width:250px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow its container on smaller screens */
+    border-radius: 15%;
+
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fb8c24; /* Matches your theme */
+    color: black;
+}
+
+.contact-section h1 {
+    font-family: 'Horizon';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    font-family: 'Poppins';
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-content ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-map {
+    margin-top: 30px;
+}
+
+.contact-map iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
