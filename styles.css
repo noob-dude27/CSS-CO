@@ -3,7 +3,45 @@
     src: url('./fonts/horizon.otf') format('opentype');
 }
 
-h1 {
-    font-family: 'Horizon', sans-serif;
-    font-size:45;
+@font-face{
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+.section-1-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    justify-content: flex-end;
+}
+
+.section-1-container > div{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    text-align:right;
+    margin:10px;
+}
+
+.section-2-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: grey;
+}
+
+.section-2-text-box{
+    text-align: center;
+    line-height:25px;
+}
+
+.section-2-text-box > h1{
+    font-family: 'Horizon';
+    font-size:45px;
+}
+
+.section-2-text-box > h2{
+    font-family: 'Poppins';
+    font-size:24px;
 }
