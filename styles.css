@@ -14,7 +14,7 @@ html, body {
     height: 100%; /* Ensure it covers the full viewport height */
 }
 
-.section-1-container{
+.homepage-section-1-container{
     display: flex;
     flex-wrap: nowrap;
     background-color: black;
@@ -41,8 +41,8 @@ html, body {
     padding: 5px 10px;
 }
 
-.section-2-container {
-    background-image: url("images/background.jpg");
+.homepage-section-2-container {
+    background-image: url("images/homepage/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -56,7 +56,7 @@ html, body {
     padding: 20px;
 }
 
-.section-2-content-group {
+.homepage-section-2-content-group {
     display: flex;
     justify-content: space-between; /* Spread the text and image */
     align-items: center;
@@ -65,37 +65,78 @@ html, body {
     margin-bottom: 20px; /* Add space below this group */
 }
 
-.section-2-text-box {
+.homepage-section-2-text-box {
     text-align: center;
     line-height: 25px;
 }
 
-.section-2-text-box > h1 {
+.homepage-section-2-text-box > h1 {
     font-family: 'Horizon';
     font-size: 50px;
 }
 
-.section-2-text-box > h2 {
+.homepage-section-2-text-box > h2 {
     font-family: 'Poppins';
     font-size: 24px;
 }
 
-.section-2-content-group > img {
+.homepage-section-2-content-group > img {
     width:400px; /* Set a fixed width */
     height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Ensure it doesn't overflow its container on smaller screens */
     border-radius: 15%;
     background-color:white;
-    border: 3px solid orange;
+    border: 3px solid #fb8c24;
 }
 
-.section-3-container{
+.homepage-section-3-container{
     display: flex;
     flex-wrap: nowrap;
-    background-color: orange;
+    background-color: #fb8c24;
     justify-content: center;
     margin: 0; /* Remove any default margin */
 
     font-family:'Poppins';
     font-size:10px;
+}
+
+.about-section-1-container {
+    background-color: #fb8c24; /* Orange background */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #fb8c24;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-section-1-container-text-box{
+    text-align: center;
+    line-height: 25px;
+    width:40%;
+    height:auto;
+    padding: 20px;
+    overflow:hidden;
+    justify-content: right;
+    margin:20px;
+}
+
+.about-section-1-container-text-box > h1{
+    font-family:'Horizon';
+    font-size: 50px;
+    color: black;
+}
+
+.about-section-1-container-text-box > p{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: black;
+}
+
+.about-section-1-container-logo{
+    justify-content: left;
 }
