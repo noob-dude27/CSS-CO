@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'Horizon';
+    src: url('./fonts/horizon.otf') format('opentype');
+}
+
+h1 {
+    font-family: 'Horizon', sans-serif;
+    font-size:45;
+}
