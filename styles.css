@@ -8,40 +8,94 @@
     src: url('./fonts/Poppins-Regular.ttf') format('truetype');
 }
 
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure it covers the full viewport height */
+}
+
 .section-1-container{
     display: flex;
     flex-wrap: nowrap;
     background-color: black;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin: 0; /* Remove any default margin */
 }
 
-.section-1-container > div{
+.logo{
+    height:50px;
+    width:auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Add space between links */
+}
+
+.nav-links > a{
     font-family: 'Poppins';
     font-size: 18px;
     font-weight: bold;
-    color:white;
-    text-align:right;
-    margin:10px;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
 }
 
-.section-2-container{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: grey;
+.section-2-container {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-.section-2-text-box{
+.section-2-content-group {
+    display: flex;
+    justify-content: space-between; /* Spread the text and image */
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Optional: limit group width */
+    margin-bottom: 20px; /* Add space below this group */
+}
+
+.section-2-text-box {
     text-align: center;
-    line-height:25px;
+    line-height: 25px;
 }
 
-.section-2-text-box > h1{
+.section-2-text-box > h1 {
     font-family: 'Horizon';
-    font-size:45px;
+    font-size: 50px;
 }
 
-.section-2-text-box > h2{
+.section-2-text-box > h2 {
     font-family: 'Poppins';
-    font-size:24px;
+    font-size: 24px;
+}
+
+.section-2-content-group > img {
+    width:400px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow its container on smaller screens */
+    border-radius: 15%;
+    background-color:white;
+    border: 3px solid orange;
+}
+
+.section-3-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: orange;
+    justify-content: center;
+    margin: 0; /* Remove any default margin */
+
+    font-family:'Poppins';
+    font-size:10px;
 }
